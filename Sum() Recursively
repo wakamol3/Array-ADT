@@ -1,0 +1,13 @@
+Pseudo Code - Reursively
+
+// Sum (A,n) = Sum of all elements - 1 + last element when n >= 0. If n < 0 then add 0.
+
+int Sum(A,n)
+{
+  if(n < 0)
+    return 0;
+  else
+    return Sum(A,n-1) + A[n];
+}
+
+//call looks like = Sum(A, length-1);
